@@ -10,3 +10,4 @@ Scipy>=1.7.3
 Scikit-learn>=1.1.1
 matplotlib>=3.5.2
 pandas>=1.4.4
+openpyxl=3.0.10
