@@ -1,4 +1,3 @@
-from cProfile import run
 from flask import Flask, render_template, request
 
 import pandas as pd
@@ -12,8 +11,6 @@ model = joblib.load("Data_prep_DimRed")
 @app.route('/')
 def home():
     return render_template('index.html')
-def table():
-    return render_template("table.html")
 
 @app.route('/success', methods = ['POST'])
 def success():
