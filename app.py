@@ -27,7 +27,7 @@ def success():
         # Perform PCA using the saved model
         pca_res = pd.DataFrame(model.transform(data1[num_cols]),columns = ['pc0', 'pc1', 'pc2', 'pc3', 'pc4', 'pc5'])
 
-        return render_template("data.html", Y = pca_res.to_html())
+        return render_template("index.html", Y = pca_res.to_html())
 
 if __name__=='__main__':
     app.run(debug = True)
